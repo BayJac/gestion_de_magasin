@@ -115,13 +115,14 @@ public class Rayon {
 		int compt =0;	
 		Produit p=null;
 		for(Produit x : listProd) {
+			//if(x.getNomProd().contains(nomProd)) {
 			if(x.getNomProd().equals(nomProd)) {
 				p=x;
 				compt++;
 			}
 		}
 		if(compt>0) {
-			System.out.println("rayon : "+this.categorie.charAt(0)+""+this.numRayon+" "+nomProd+" - Prix Unitaire : "+ p.getP_U() +" Fcfa - Quantité : "+compt+"\n");
+			System.out.println("rayon : "+this.categorie.charAt(0)+""+this.numRayon+" "+p.getNomProd()+" - Prix Unitaire : "+ p.getP_U() +" Fcfa - Quantité : "+compt+"\n");
 			return true;
 			//return "rayon : "+this.categorie.charAt(0)+""+this.numRayon+" "+nomProd+" - Prix Unitaire : "+ p.getP_U() +" Fcfa - Quantité : "+compt+"\n";
 		}

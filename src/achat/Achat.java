@@ -108,7 +108,7 @@ public class Achat {
 		}
 		if(compt>0) {
 			//System.out.println(nomProd+" - Prix Unitaire : "+ p.getP_U() +" Fcfa - Quantité : "+compt+"---------"+(compt * p.getP_U())+"\n");
-			return nomProd+" - Prix Unitaire : "+ p.getP_U() +" Fcfa - Quantité : "+compt+"---------"+(compt * p.getP_U()+"\n");
+			return nomProd+" - Prix Unitaire : "+ p.getP_U() +" Fcfa - Quantité : "+compt+"---------"+(compt * p.getP_U()+" Fcfa\n");
 		}
 		else {
 			return null;

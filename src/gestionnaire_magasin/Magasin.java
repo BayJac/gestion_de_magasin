@@ -175,7 +175,7 @@ public class Magasin {
 		try {
 			FileWriter file = new FileWriter(System.getProperty("user.home")+System.getProperty("file.separator")+"facture"+achat.getNumCmde()+".txt");
 			System.out.println();
-			file.write("---------------------------- "+this.name+" ----------------------------"+"\n---Numero achat : "+achat.getNumCmde()+"\n"+"---Date : "+achat.getDte()+"\n---Client : "+achat.getNomCli()+"\n\n"+achat.afficherAchat()+"\nTotal : "+achat.getTotal());
+			file.write("---------------------------- "+this.name+" ----------------------------"+"\n---Numero achat : "+achat.getNumCmde()+"\n"+"---Date : "+achat.getDte()+"\n---Client : "+achat.getNomCli()+"\n\n"+achat.afficherAchat()+"\nTotal : "+achat.getTotal()+"Fcfa");
 			file.close();
 		} catch (IOException e) {
 			e.printStackTrace();
